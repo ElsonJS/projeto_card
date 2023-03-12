@@ -1,205 +1,81 @@
-body{
-    position: absolute;
-    background: url(https://media.shoanime.com/2018/11/wallpaper-dragon-ball-super.jpg);
+* {
+    padding: 0;
+    margin: 0;
 }
 
-.conteiner{
-    position: relative;
-    left: 480px;
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../img/fundo.png');
+}
+
+#limit-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner {
+    background-color: #000000;
+    width: 350px;
+    height: 530px;
     margin-top: 50px;
-    display: grid;
-    width: 25vw;
-    height: 75vh;    
-    background-color: black;
+    border: 2px solid #fff;
     border-radius: 10px;
-    border: 2px solid blue;
-}
-
-.img-card{
-    position: relative;
-    left: 100PX;
-    margin-top: 25PX;
-    width: 135px;
-    height: 135px;
-    border-radius: 50%;
-    border: 3px solid blue;
-}
-
-.img-card:hover{
-    border: 3px solid aqua;
-    width: 145px;
-    height: 145px;
-    left: 95PX;
-}
-
-.text-card{
-    position: relative;
     color: #fff;
+    transition: border 254ms;
 }
 
-.text-card h2{
+.conteiner:hover {
+    border: 3px solid #971919; 
+}
+
+.img-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.img-center img{
+    width: 40%;
+    border: 3px solid red;
+    border-radius: 50%;
+}
+
+.text-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 5px;
+    text-align:justify
+}
+
+.title {
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
-    left: 38px;
-    margin-top: -60px;
-    color: aqua;
-    transition: all ease 0.3s;
+    font-size: 13px;
 }
 
-.text-card h2:hover{
-    color: rgb(12, 153, 153);
-}
-
-.text-card p{
+.text {
     position: relative;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 14px;
-    left: 28px;
-    transition: all ease 0.3s;
+    margin-top: 15px;
 }
 
-.text-card p:hover{
-    color: rgba(212, 208, 208, 0.863);
-}
-
-.nav-icons{
+.conteiner .nav-icons {
     position: relative;
     display: flex;
+    left: 90px;
 }
 
-.icone-01{
-    position: relative;
-    left: 50px;
+.nav-icons a {
+    font-size: 30px;
+    color: #06f8f8;
+    margin: 10px;
+    transition: font-size 1s;
 }
 
-.icone-02{
-    position: relative;
-    left: 80px;
-}
-
-.icone-03{
-    position: relative;
-    left: 115px;
-}
-
-.icone-04{
-    position: relative;
-    left: 145px;
-}
-
-.img-card-icone{
-    position: relative;
-    left: -10PX;
-    margin-top: -8000PX;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid blue;
-    transition: all ease 0.3s;
-}
-
-.img-card-icone:hover{
-    width: 45px;
-    height: 45px;
-}
-
-@media only screen and (max-width:768px){
-    body{
-        position: absolute;
-        background: url(https://i0.wp.com/www.coliseugeek.com.br/wp-content/uploads/2021/06/papel-de-parede-gamer-4k-para-celular-1-576x1024.jpg?resize=576%2C1024);
-    }
-
-    .conteiner{
-        position: relative;
-        left: 35px;
-        margin-top: 20px;
-        display: grid;
-        width: 80vw;
-        height: 85vh;    
-        background-color: black;
-        border-radius: 10px;
-        border: 1px solid blue;
-    }
-
-    .img-card{
-        position: relative;
-        left: 88PX;
-        margin-top: 12PX;
-        width: 140px;
-        height: 140px;
-        border-radius: 50%;
-        border: 3px solid blue;
-    }
-
-    .text-card{
-        position: relative;
-        color: #fff;
-    }
-
-    .text-card h2{
-        position: relative;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 18px;
-        font-weight: bold;
-        left: 30px;
-        margin-top: -65px;
-        color: aqua;
-    }
-
-    .text-card h2:hover{
-        color: rgb(101, 212, 212);
-    }
-
-    .text-card p{
-        position: relative;
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: 13px;
-        left: 30px;
-    }
-    
-    .nav-icons{
-        position: relative;
-        display: flex;
-        flex-flow:nowrap;
-    }
-
-    .icone-01{
-        position: relative;
-        left: 55px;
-    }
-
-    .icone-02{
-        position: relative;
-        left: 75px;
-    }
-
-    .icone-03{
-        position: relative;
-        left: 95px;
-    }
-
-    .icone-04{
-        position: relative;
-        left: 115px;
-    }
-    
-    .img-card-icone{
-        position: relative;
-        left: -10PX;
-        margin-top: -8000PX;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        border: 1px solid blue;
-        transition: all ease 0.3s;
-    }
-
-    .img-card-icone:hover{
-        width: 45px;
-        height: 45px;
-    }
-
-
+.nav-icons a:hover {
+    font-size: 35px;
+    border-bottom: 2px solid #fff;
 }
